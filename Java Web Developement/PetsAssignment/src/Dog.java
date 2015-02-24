@@ -5,7 +5,7 @@
  */
 public class Dog implements Pets{
 	/**
-	 * implementation of abstract method of interface Pets
+	 * implementation of interface Pet
 	 */
 @Override	public void speak(){
 		System.out.println("Dog speaks Waoowaoo");
