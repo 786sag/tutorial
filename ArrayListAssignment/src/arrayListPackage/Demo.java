@@ -18,9 +18,11 @@ public class Demo {
 		ArrayList<Integer> myArray1 = new ArrayList<Integer>();
 		//Creating an object of class BubbleSort
 		System.out.println("Unsorted array is "+myArray);
-	    bs.arraySort(myArray);
+		ArrayList listCopy = new ArrayList(myArray);
+	    bs.arraySort(listCopy);
 	    //Assigning sorted arraylist to second arraylist
-	    myArray1=new ArrayList<Integer>(myArray);
+	    myArray1=new ArrayList<Integer>(listCopy);
 	    System.out.println("Sorted array is "+myArray1);
+	    System.out.println("just to show no modification in original array "+myArray);
 }
 }
