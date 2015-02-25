@@ -15,15 +15,15 @@ public class BubbleSort {
 	 */
 	public void arraySort(ArrayList<Integer> array) {
 	   
-    for(int i = array.size()-1; i >= 0; i--) {
-        for(int j = 0; j < i; j++) {
-            if(array.get(j) > array.get(j + 1)) {
-                int temp = array.get(j);
-                array.set(j, array.get(j + 1));
-                array.set(j + 1, temp);
-            }
-        }
-    
-    }
+		for(int i = 0; i <array.size()-1; i++) {
+	        for(int j = array.size()-1; j > i; j--) {
+	            if(array.get(j) < array.get(j - 1)) {
+	                int temp = array.get(j);
+	                array.set(j, array.get(j - 1));
+	                array.set(j - 1, temp);
+	            }
+	        }
+	    
+	    }
     }
 }
